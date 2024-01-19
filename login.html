@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login</title>
+  </head>
+  <body class="max-w-7xl mx-auto">
+    <!-- Header  -->
+    <section class="lg:px-16 px-5">
+      <div class="py-10 text-3xl ">
+        <button onclick="index()" >SMART-WALLET</button>
+      </div>
+    </section>
+
+    <section class="lg:px-16 px-5 bg-cover bg-center h-screen lg:flex gap-5 justify-center items-center" style="background-image: url('https://i2.wp.com/files.123freevectors.com/wp-content/original/174151-blue-blur-background.jpg?w=500&q=95');" >
+      <!-- Wallet-Info  -->
+      <div class="w-full mx-auto py-5 pt-20 flex flex-col">
+        <h1 class="text-2xl font-semibold  mb-4 text-center bg-white bg-opacity-50 py-3 rounded-md shadow-md"><i class='bx bxs-wallet' ></i> Waller Manager</h1>
+        <img src="./Resources/images/wallet.png" alt="Wallet Img" class="p-5 w-4/12 h-4/12 mx-auto mb-4 rounded-full">
+        <h1 class="text-white text-center p-1">The Web Application is Developed by Shariar Sultan Fahim. Shariar is a 
+        FullStack Developer(MERN). Hire him to grow your technology faster.</h1>
+        <div class="flex gap-10 justify-center py-5">
+          <button onclick="index()"><i class='text-3xl bx bxl-facebook-square'></i> </button>
+          <button onclick="index()"><i class='text-3xl bx bxl-github' ></i></button>
+          <button onclick="index()"><i class='text-3xl bx bxl-telegram' ></i></button>
+        </div>
+      </div>
+      <!-- Login  -->
+      <div class="w-full mx-auto py-10 p-5 bg-white bg-opacity-50 rounded-md shadow-md">
+        <h2 class="text-2xl font-semibold text-gray-800 mb-6">User Login</h2>
+        <div>
+            <div class="mb-4">
+                <label for="username" class="block text-gray-700 text-sm font-bold mb-2">Email Adress:</label>
+                <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-md" placeholder="Enter your username" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="password" class="block text-gray-700 text-sm font-bold mb-2">Password:</label>
+                <input type="password" id="password" name="password" class="w-full px-3 py-2 border rounded-md" placeholder="Enter your password" required>
+            </div>
+
+            <button type="submit" onclick="validateLogin()" class=" bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue">
+                Login Now
+            </button>
+        </div>
+    </div>
+    </section>
+
+    <!-- footer  -->
+    <footer class="lg:px-16 px-5 py-10">
+      <section class="p-3 lg:flex justify-between">
+        <div class="flex gap-10">
+          <button>ABOUT</button>
+          <button>HOW IT WORKS</button>
+          <button>CONTACT</button>
+        </div>
+        <div>
+          <button onclick="index()" class="text-3xl">SMART-WALLET</button>
+        </div>
+        <div class="flex gap-10">
+          <button>Singup</button>
+          <button onclick="login()">Login</button>
+        </div>
+        <div class="flex items-center gap-10">
+          <button onclick="index()"><i class='text-3xl bx bxl-facebook-square'></i> </button>
+          <button onclick="index()"><i class='text-3xl bx bxl-github' ></i></button>
+          <button onclick="index()"><i class='text-3xl bx bxl-telegram' ></i></button></div>
+      </section>
+      <div class="p-2 border-t border-black my-4"></div>
+      <div class="p-3 flex justify-between">
+        <h1 class="text-[#565B58] ">Copyright © 2020.Shariar Creative  </h1>
+        <h1 class="text-[#565B58] ">Designed by Shariar</h1>
+      </div>
+    </footer>
+    <script type="" src="login.js"></script>
+  </body>
+</html>

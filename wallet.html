@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="output.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>My Wallet</title>
+  </head>
+  <body class="mx-auto">
+    <!-- Header  -->
+    <section class="lg:px-16 px-5">
+      <div class="py-10 text-3xl">
+        <h1>SMART-WALLET</h1>
+      </div>
+    </section>
+
+    <section class="bg-cover bg-center h-screen flex flex-col gap-10 " style="background-image: url('https://i2.wp.com/files.123freevectors.com/wp-content/original/174151-blue-blur-background.jpg?w=500&q=95');">
+        <div class="lg:px-16 px-5 pt-14">
+            <h1 class="text-2xl  mb-4 text-center bg-white bg-opacity-50 px-40 p-3 rounded-md shadow-md"><i class='bx bxs-wallet' ></i> Waller Manager</h1>
+        </div>
+        <div class="lg:px-16 px-5 w-full mx-auto lg:flex justify-between gap-5">
+            <div class="w-full mx-auto bg-green-500 text-white text-center text-3xl py-2 px-4 rounded-md">
+              Deposite <br> <span id="totaldeposite" class="ml-2">00</span> BDT
+            </div>
+            <div  class="w-full mx-auto bg-red-500 text-white text-center text-3xl py-2 px-4 rounded-md">
+              Withdraw <br> <span id="totalwithdraw" class="ml-2">00</span> BDT
+            </div>
+            <div  class="w-full mx-auto bg-blue-500 text-white text-center text-3xl py-2 px-4 rounded-md">
+              Current Wallet <br> <span id="current-wallet" class="ml-2">00</span> BDT
+            </div>
+        </div>
+        <div class="lg:px-16 px-5 bg-cover bg-center h-screen lg:flex justify-center items-center gap-5">
+            <div class=" bg-white bg-opacity-50 w-full mx-auto p-5 py-5 flex flex-col gap-5 rounded-md">
+                <h1 class="text-3xl ">Diposite Money</h1>
+                <input type="number" id="diposite" class="w-full px-3 py-2 border rounded-md" placeholder="Enter amount you want to deposite" required>
+                <button onclick="depositeMoney()"  class="bg-yellow-500 w-2/6 p-3  rounded-xl">
+                    Diposite
+                </button>
+            </div>
+            <div class=" bg-white bg-opacity-50 w-full mx-auto p-5 py-5 flex flex-col gap-5 rounded-md">
+                <h1 class="text-3xl ">Withdraw Money</h1>
+                <input type="number" id="withdraw" class="w-full px-3 py-2 border rounded-md" placeholder="Enter amount you want to withdraw" required>
+                <button  onclick="withdrawMoney()"  class="bg-green-600 w-2/6 p-3 rounded-xl">
+                    Withdraw
+                </button>
+            </div>
+        </div>
+        
+         
+    </section>
+
+    
+    <!-- footer  -->
+    <footer class="lg:px-16 px-5 py-10">
+      <section class="p-3 lg:flex justify-between">
+        <div class="flex gap-10">
+          <button>ABOUT</button>
+          <button>HOW IT WORKS</button>
+          <button>CONTACT</button>
+        </div>
+        <div>
+          <button onclick="index()" class="text-3xl">SMART-WALLET</button>
+        </div>
+        <div class="flex gap-10">
+          <button>Singup</button>
+          <button onclick="login()">Login</button>
+        </div>
+        <div class="flex items-center gap-10">
+          <button onclick="index()"><i class='text-3xl bx bxl-facebook-square'></i> </button>
+          <button onclick="index()"><i class='text-3xl bx bxl-github' ></i></button>
+          <button onclick="index()"><i class='text-3xl bx bxl-telegram' ></i></button>  
+        </div>
+      </section>
+      <div class="p-2 border-t border-black my-4"></div>
+      <div class="p-3 flex justify-between">
+        <h1 class="text-[#565B58] ">Copyright © 2020.Shariar Creative  </h1>
+        <h1 class="text-[#565B58] ">Designed by Shariar</h1>
+      </div>
+    </footer>
+    <script type="" src="wallet.js"></script>
+  </body>
+</html>
